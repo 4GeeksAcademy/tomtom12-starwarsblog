@@ -1,0 +1,52 @@
+
+
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Add any other styles you need for the top section */
+}
+
+img {
+    max-width: 100%;
+  
+}
+.char-title{
+    margin-bottom:10px;
+}
+.top p {
+    margin-left: 20px; /* Adjust the margin as needed to control the spacing */
+}
+p{
+    width:400px;
+}
+.fixed-about img{
+    width:500px;
+    height:400px;
+    justify-content: center;
+    margin-right: 30px;
+}
+.fixed-about h2 {
+    
+    margin-top: 10px; /* Add some margin to separate the h2 from the content above */
+    margin: 10px 80px 0px 80px;
+    justify-content: center;
+    color:darkred;
+}
+.bottom{
+    display: flex;
+}
+
+/* CSS to change the thickness of an hr line */
+hr {
+    color:darkred;
+    border: none; /* Remove the default border */
+    border-top: 2px solid red; /* Set the border-top to control thickness and color */
+    margin: 10px 0; /* Adjust the margin as needed */
+   
+}
+
+.btn{
+    margin-right:20px
+}

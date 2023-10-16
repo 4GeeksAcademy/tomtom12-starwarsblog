@@ -1,0 +1,16 @@
+.card-container{
+    width:100%;
+  
+    /* stops wrapping  */
+    white-space: nowrap;
+    /* makes it scrollable */
+    overflow-x:scroll
+}
+.card{
+    display:inline-block;
+}
+.title{
+    display:flex;
+    justify-content: start;
+    
+}
