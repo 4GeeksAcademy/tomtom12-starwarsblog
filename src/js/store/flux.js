@@ -5,7 +5,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			
 			people: []
-			,planets:[]
+			,planets:[],
+			vehicles:[]
 			,favorites:(localStorage.getItem("favorites") && localStorage.getItem("favorites").length && JSON.parse(localStorage.getItem("favorites")) ) || [] // " ['Luke Skywalker', 'Somethign'] " >> ['Luke Skywalker', 'Somethign']
 		},
 		actions: {
@@ -28,6 +29,13 @@ const getState = ({ getStore, getActions, setStore }) => {
 					// always console log first
 					// console.log(data)
 					setStore({planets:data.results})
+				}),
+				fetch("https://swapi.dev/api/vehicles")
+				.then((response)=>response.json())
+				.then((data)=>{
+					// always console log first
+					// console.log(data)
+					setStore({vehicles:data.results})
 				})
 			},
 			append_favorites:(name)=>{
