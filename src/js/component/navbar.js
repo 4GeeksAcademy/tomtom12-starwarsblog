@@ -27,8 +27,10 @@ export const Navbar = (props) => {
 						{
 							name
 						}
-						   <button className="btn btn-outline-warning ms-4" style={{"color": "#514b1f"}} onClick={()=>
-                       		 {	
+						   <button role="button" className="btn btn-outline-warning ms-4" style={{"color": "#514b1f"}} onClick={(e)=>
+                       		// google stop propagation
+							{	
+								e.stopPropagation();
 								if( actions.check_favorites(name) ){
 									actions.remove_favorites(name)
 								}
