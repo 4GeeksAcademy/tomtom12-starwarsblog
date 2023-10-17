@@ -20,8 +20,9 @@ const Planet= (props)=> {
                 <p className="card-text">Terrain: {props.planet.terrain}</p>
                 <p className="card-text">Population: {props.planet.population}</p>
                 <p className="card-text">Diameter: {props.planet.diameter}</p>
+                <div className="hear-select d-flex justify-content-center">
                 <Link to={'/about/planets/'+ props.id}>
-                    <span className="btn btn-primary">about</span>
+                    <span className="btn btn-primary">Learn more</span>
                 </Link>
                 <button className="btn btn-outline-warning fa-regular fa-heart ms-4" style={{"color": "#514b1f"}} onClick={()=>
                         {
@@ -37,6 +38,7 @@ const Planet= (props)=> {
                     }>
 
                     </button>
+                    </div>
             </div>
         </div>
     )

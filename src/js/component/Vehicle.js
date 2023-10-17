@@ -10,7 +10,7 @@ const Vehicle = (props)=> {
         <div className="card" style={{width: "18rem"}}>
          
             <img 
-                src={`https://starwars-visualguide.com/assets/img/characters/${props.id + 1}.jpg`}
+                src={`https://starwars-visualguide.com/assets/img/vehicles/${props.id + 1}.jpg`}
                 onError={(e) => {
                     e.target.src = 'https://starwars-visualguide.com/assets/img/placeholder.jpg'
                 }}
@@ -21,13 +21,13 @@ const Vehicle = (props)=> {
             <div className="card-body">
                 <h5 className="card-title">{props.vehicle.name}</h5>
                 <div className="data">
-                <p className="card-text">weight: {props.vehicle.model}</p>
-                <p className="card-text">Eye color: {props.vehicle.manufacturer}</p>
-                <p className="card-text">skin color: {props.vehicle.length}</p>
+                <p className="card-text">model: {props.vehicle.model}</p>
+                <p className="card-text">manufacturer: {props.vehicle.manufacturer}</p>
+                <p className="card-text">length: {props.vehicle.length}</p>
                 </div>
-                <div className="hear-select">
-                    <Link to={'/about/people/'+ props.id}>
-                        <span className="btn btn-primary">about</span>
+                <div className="hear-select d-flex justify-content-center">
+                    <Link to={'/about/vehicles/'+ props.id}>
+                        <span className="btn btn-primary">Learn more</span>
                     </Link>
                     <button className="btn btn-outline-warning fa-regular fa-heart ms-4" style={{"color": "#514b1f"}} onClick={()=>
                         {

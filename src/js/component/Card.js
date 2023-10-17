@@ -25,9 +25,9 @@ const Card = (props)=> {
                 <p className="card-text">Eye color: {props.person.eye_color}</p>
                 <p className="card-text">skin color: {props.person.skin_color}</p>
                 </div>
-                <div className="hear-select">
+                <div className="hear-select d-flex justify-content-center">
                     <Link to={'/about/people/'+ props.id}>
-                        <span className="btn btn-primary">about</span>
+                        <span className="btn btn-primary learn-more">Learn more</span>
                     </Link>
                     <button className="btn btn-outline-warning fa-regular fa-heart ms-4" style={{"color": "#514b1f"}} onClick={()=>
                         {

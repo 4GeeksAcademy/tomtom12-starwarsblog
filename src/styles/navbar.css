@@ -1,5 +1,5 @@
 .counter{
-    background-color: grey;
+    background-color: #6c757d;
     margin-left: 5px;
     width:50px;
 }
@@ -7,4 +7,13 @@
     width:70px;
     height:40px;
     margin-left:10px;
+}
+
+.righty{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    display: flex;
+    align-items: center;
 }

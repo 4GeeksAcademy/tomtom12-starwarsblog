@@ -20,27 +20,27 @@ export const Navbar = (props) => {
 									{store.favorites.length}
 								</div>
 						</div>
-					</button>
+					</button >
 				<ul className="dropdown-menu dropdown-menu-end ">
 					{store.favorites.map(name=>
-					<li className="dropdown-item ">
+					<li className="dropdown-item righty ">
 						{
 							name
 						}
 						   <button className="btn btn-outline-warning ms-4" style={{"color": "#514b1f"}} onClick={()=>
-                        {
-                            if( actions.check_favorites(name) ){
-                                actions.remove_favorites(name)
-                            }
-                            else{
-                                actions.append_favorites(name)
-                            }
-                          console.log(store.favorites)
-                    }
-                }
+                       		 {	
+								if( actions.check_favorites(name) ){
+									actions.remove_favorites(name)
+								}
+								else{
+									actions.append_favorites(name)
+								}
+							console.log(store.favorites)
+                    		}
+                }	
                     >
 						
-						<i class="fa-solid fa-trash"></i>
+						<i class="fa-solid fa-trash righty" style={{justifyContent:"end"}}></i>
                     	</button>
 					</li>)}
 				</ul>
